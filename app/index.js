@@ -12,6 +12,7 @@ var data0 = [
 
 var SearchBox = React.createClass({
   callCallback: function() {
+    /* ref help in accessing the virtualDOM: http://jamesknelson.com/react-js-by-example-interacting-with-the-dom/ */
     this.props.callback( this.refs.one.value, this.refs.two.checked );
   },
   render: function() {
